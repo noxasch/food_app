@@ -20,7 +20,7 @@ class MutationGenerator < Rails::Generators::NamedBase
 
     create_file "spec/mutations/#{file_path}_spec.rb", <<~RUBY
       RSpec.describe #{class_name}, type: :mutation do
-        pending "add some examples to (or delete) #{__FILE__}"
+        pending "add some examples to (or delete) \#{__FILE__}"
       end
     RUBY
   end
