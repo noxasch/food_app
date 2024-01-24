@@ -34,25 +34,25 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'annotate', '~> 3.2'
   gem 'debug', platforms: %i[mri windows]
-  gem 'factory_bot_rails', '~> 6.4'
-  gem 'rails-controller-testing', '~> 1.0'
-  gem 'rspec', '~> 3.12'
-  gem 'rspec-rails', '~> 6.1'
   gem 'rubocop', '~> 1.59'
   gem 'rubocop-performance', '~> 1.20'
   gem 'rubocop-rails', '~> 2.23'
   gem 'rubocop-rspec', '~> 2.26'
+  gem 'factory_bot_rails', '~> 6.4'
+  gem 'rails-controller-testing', '~> 1.0'
+
+  gem 'rspec-rails', '~> 6.1'
+  gem 'rspec-json_expectations', '~> 2.2'
 end
 
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'annotate', '~> 3.2'
   gem 'solargraph', '~> 0.50.0'
   gem 'solargraph-rails', '~> 1.1'
 end
 
 gem 'active_model_serializers', '~> 0.10.14'
-# gem 'doorkeeper', '~> 5.6'
 gem 'mutations', '~> 0.9.1'
