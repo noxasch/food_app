@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.2.2'
+ruby '3.2.3'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1.2'
@@ -34,13 +34,13 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'annotation', '~> 0.1.2'
+  gem 'annotate', '~> 3.2'
   gem 'debug', platforms: %i[mri windows]
   gem 'factory_bot_rails', '~> 6.4'
   gem 'rails-controller-testing', '~> 1.0'
   gem 'rspec', '~> 3.12'
   gem 'rspec-rails', '~> 6.1'
-  gem 'rubocop', '~> 1.60'
+  gem 'rubocop', '~> 1.59'
   gem 'rubocop-performance', '~> 1.20'
   gem 'rubocop-rails', '~> 2.23'
   gem 'rubocop-rspec', '~> 2.26'
@@ -54,5 +54,5 @@ group :development do
 end
 
 gem 'active_model_serializers', '~> 0.10.14'
-gem 'doorkeeper', '~> 5.6'
+# gem 'doorkeeper', '~> 5.6'
 gem 'mutations', '~> 0.9.1'
