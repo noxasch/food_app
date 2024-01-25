@@ -9,6 +9,10 @@ class Api::V1::Users::Foods::Destroy < ApplicationMutation
     food.destroy! && { success: true }
   end
 
+  def validate
+    add_error(:food, :not_found, 'food not found') unless food
+  end
+
   private
 
   def food

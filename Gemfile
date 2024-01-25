@@ -56,3 +56,5 @@ end
 
 gem 'active_model_serializers', '~> 0.10.14'
 gem 'mutations', '~> 0.9.1'
+
+gem 'rack-cors', '~> 2.0'
